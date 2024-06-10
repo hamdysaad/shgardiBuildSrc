@@ -17,6 +17,7 @@ object Config {
         const val ProdDimension = "prod"
 
         const val kotlinCompilerExtensionVersion = "1.4.7"
+
     }
 
     object Dependencies {
