@@ -1,2 +1,2 @@
-/buildSrc/build
-/buildSrc/.gradle
+/build
+/.gradle
