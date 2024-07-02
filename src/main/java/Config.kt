@@ -15,7 +15,6 @@ object Config {
         const val DevDimension = "dev"
         const val StageDimension = "stage"
         const val ProdDimension = "prod"
-
         const val kotlinCompilerExtensionVersion = "1.4.7"
 
     }
