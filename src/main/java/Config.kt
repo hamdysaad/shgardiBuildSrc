@@ -4,6 +4,7 @@ object Config {
 
     object AppConfig {
         const val appId = "com.mnasat.nashmi"
+
         const val compileSdkVersion = 34
         const val minSdkVersion = 23
         const val ndkVersion = "23.1.7779620"
