@@ -168,7 +168,7 @@ object Versions {
     const val biometric_version = "1.0.1"
     const val AdvancedWebView = "v3.2.1"
     const val MoyasarSDK = "0.5.1"
-    const val QattaSDK = "2.7@aar"
+    const val QattaSDK = "3.2.0@aar"
     const val NearPaySdk = "2.1.64"
 
     const val qr_scanner = "2.3.2"
