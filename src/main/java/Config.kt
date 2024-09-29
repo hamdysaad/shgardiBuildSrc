@@ -39,6 +39,8 @@ object Config {
             "com.google.firebase:firebase-appdistribution-gradle:${Versions.app_distribution}"
         const val google_secrets =
             "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:${Versions.google_secrets}"
+        const val checkout3Ds = "https://maven.pkg.github.com/checkout/checkout-3ds-sdk-android"
+
     }
 
     object Plugins {
