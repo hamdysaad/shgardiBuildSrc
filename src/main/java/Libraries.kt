@@ -208,6 +208,7 @@ object Libraries {
     const val qr_scanner = "com.github.yuriy-budiyev:code-scanner:${Versions.qr_scanner}"
     const val lottie = "com.airbnb.android:lottie:${Versions.lottieVersion}"
 
+    const val checkout3dsSdK = "com.checkout:checkout-sdk-3ds-android:${Versions.checkout3DSSdkVersion}"
 
     //courier extras
     const val lifecycle_livedata = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle_livedata}"
