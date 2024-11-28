@@ -170,6 +170,8 @@ object Versions {
     const val MoyasarSDK = "0.5.1"
     const val QattaSDK = "3.2.0@aar"
     const val NearPaySdk = "2.1.64"
+    const val checkout3DSSdkVersion = "3.2.3"
+
 
     const val qr_scanner = "2.3.2"
 
