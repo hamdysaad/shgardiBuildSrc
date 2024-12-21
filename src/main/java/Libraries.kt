@@ -131,7 +131,7 @@ object Libraries {
     const val hilt_navigation = "androidx.hilt:hilt-navigation-fragment:${Versions.hiltNavigation}"
     const val stepview = "com.github.shuhart:stepview:${Versions.stepview}"
     const val braze = "com.appboy:android-sdk-ui:${Versions.braze}"
-    const val glide_compiler = "com.github.bumptech.glide:compiler:${Versions.glide}"
+    const val glide_compiler = "com.github.bumptech.glide:ksp:${Versions.glide}"
     const val intercom_android = "io.intercom.android:intercom-sdk:${Versions.intercom_android}"
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
 

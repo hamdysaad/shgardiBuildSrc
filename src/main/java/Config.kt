@@ -3,11 +3,9 @@ object Config {
     const val localModules = true
 
     object AppConfig {
-        const val compileSdkVersion = 34
+        const val compileSdkVersion = 35
         const val minSdkVersion = 23
         const val ndkVersion = "23.1.7779620"
-        const val versionCode = 292
-        const val versionName = "7.81"
         const val testRunner = "androidx.test.runner.AndroidJUnitRunner"
         const val consumerProguardFiles = "consumer-rules.pro"
         const val DeveloperFlavorDimension = "developer"
@@ -15,7 +13,6 @@ object Config {
         const val StageDimension = "stage"
         const val ProdDimension = "prod"
         const val kotlinCompilerExtensionVersion = "1.4.7"
-
     }
 
     object Dependencies {
