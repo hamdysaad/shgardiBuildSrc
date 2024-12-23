@@ -79,6 +79,7 @@ object Config {
 
     object Modules {
         const val core = ":core"
+        const val coreRes = ":coreRes"
         const val drop_off = ":Dropoff"
         const val favourite_location = ":Lib:FavouriteLocation"
         const val lib_drop_off = ":Lib:Dropoff"
