@@ -1,6 +1,13 @@
+import org.apache.tools.ant.util.JavaEnvUtils.VERSION_11
+import org.gradle.api.JavaVersion
+
 object Config {
 
     const val localModules = true
+
+    val sourceCompatibility = JavaVersion.VERSION_17
+    val targetCompatibility = JavaVersion.VERSION_17
+    const val jvmTarget = "17"
 
     object AppConfig {
         const val compileSdkVersion = 35
@@ -12,7 +19,7 @@ object Config {
         const val DevDimension = "dev"
         const val StageDimension = "stage"
         const val ProdDimension = "prod"
-        const val kotlinCompilerExtensionVersion = "1.4.7"
+        const val kotlinCompilerExtensionVersion = "1.5.3"
     }
 
     object Dependencies {
