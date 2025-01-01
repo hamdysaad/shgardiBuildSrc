@@ -122,7 +122,7 @@ object Versions {
     const val stepview = "1.5.1"
     const val braze = "23.0.0"
     const val appcompat = "1.6.1"
-    const val material = "1.8.0"
+    const val material = "1.13.0-alpha09"
     const val constraintlayout = "2.1.4"
     const val okhttpBom = "4.9.3"
 
