@@ -24,6 +24,9 @@ object Versions {
     const val ccp = "2.6.1"
     const val nammu = "1.1.1"
     const val navigation_component = "2.5.3"
+    const val WEB_VIEW = "0.26.2-beta"
+    const val appCompatVersion = "1.4.1"
+    const val COIL = "2.5.0"
 
     //compose
     const val compose_version = "1.5.1"
@@ -39,6 +42,9 @@ object Versions {
     const val paging_compose = "3.2.1"
     const val google_accompanist = "v0.32.0"
     const val raamcostaVersion = "1.9.63"
+    const val LOTTIE = "6.0.1"
+    const val WHEEL_PICKER = "1.0.0-alpha19"
+    const val IMAGE_PICKER = "2.1"
 
     const val compose_runtime_live_data = "1.3.0"
     const val compose_preview = "1.3.0"
