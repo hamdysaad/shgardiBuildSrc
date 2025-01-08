@@ -20,6 +20,7 @@ object Config {
         const val StageDimension = "stage"
         const val ProdDimension = "prod"
         const val kotlinCompilerExtensionVersion = "1.5.3"
+
     }
 
     object Dependencies {
