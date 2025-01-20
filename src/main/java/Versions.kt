@@ -37,7 +37,7 @@ object Versions {
     const val compose_navigation = "2.7.4"
     const val compose_view_model = "2.7.0"
     const val compose_compiler = "1.5.8"
-    const val compose_system_ui_controller = "0.30.1"
+    const val compose_system_ui_controller = "0.28.0"
     const val compose_hilt = "1.0.0"
     const val paging_compose = "3.2.1"
     const val google_accompanist = "v0.32.0"
