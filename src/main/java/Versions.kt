@@ -29,8 +29,8 @@ object Versions {
     const val COIL = "2.5.0"
 
     //compose
-    const val compose_version = "1.5.1"
-    const val compose_material_3 = "1.1.2"
+    const val compose_version = "1.6.0"
+    const val compose_material_3 = "1.4.0-alpha02"
     const val compose_activity = "1.7.2"
     const val compose_ui_test = "1.3.0"
     const val compose_constraintlayout = "1.0.1"
