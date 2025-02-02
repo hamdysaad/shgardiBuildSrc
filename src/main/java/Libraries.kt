@@ -40,7 +40,7 @@ object Libraries {
     const val LOTTIE = "com.airbnb.android:lottie-compose:${Versions.LOTTIE}"
     const val compose_system_ui_controller =
         "com.google.accompanist:accompanist-systemuicontroller:${Versions.compose_system_ui_controller}"
-    const val accompanist= "com.google.accompanist:accompanist-navigation-material:0.36.0"
+    const val accompanist = "com.google.accompanist:accompanist-navigation-material:0.36.0"
     const val WHEEL_PICKER =
         "com.github.zj565061763:compose-wheel-picker:${Versions.WHEEL_PICKER}"
     const val IMAGE_PICKER =
@@ -62,7 +62,8 @@ object Libraries {
         "io.github.raamcosta.compose-destinations:core:${Versions.raamcostaVersion}"
     const val raamcosta_destination_ksp =
         "io.github.raamcosta.compose-destinations:ksp:${Versions.raamcostaVersion}"
-    const val raamcosta_destination_animations = "io.github.raamcosta.compose-destinations:animations-core:${Versions.raamcostaVersion}"
+    const val raamcosta_destination_animations =
+        "io.github.raamcosta.compose-destinations:animations-core:${Versions.raamcostaVersion}"
 
     const val compose_live_data =
         "androidx.compose.runtime:runtime-livedata:${Versions.compose_version}"
@@ -305,4 +306,7 @@ object Libraries {
     const val SeekArc = "com.github.Triggertrap:SeekArc:v1.1"
     const val RoundedProgressBar =
         "com.github.MackHartley:RoundedProgressBar:1.0"
+
+    const val pinView = "io.github.chaosleung:pinview:1.4.4"
+
 }
