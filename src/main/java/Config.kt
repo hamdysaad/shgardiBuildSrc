@@ -4,6 +4,8 @@ import org.gradle.api.JavaVersion
 object Config {
 
     const val localModules = true
+    const val baseFeaturesArchivesPath = "baseFeatures"
+    const val baseLibesArchivesPath = "baseLibs"
 
     val sourceCompatibility = JavaVersion.VERSION_17
     val targetCompatibility = JavaVersion.VERSION_17
