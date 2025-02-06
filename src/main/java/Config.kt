@@ -147,6 +147,7 @@ object Config {
         const val baseNavigation = ":BaseModules:baseLibs:BaseNavigation"
         const val base_utils = ":BaseModules:baseLibs:Utils"
         const val shgardi_logger = ":BaseModules:baseLibs:ShgardiLogger"
+        const val baseCoreResource = ":BaseModules:baseCoreResource"
 
         //Base features
         const val baseFeature_orderChatGroup = ":BaseModules:baseFeatures:OrderChatGroup"
