@@ -308,5 +308,8 @@ object Libraries {
         "com.github.MackHartley:RoundedProgressBar:1.0"
 
     const val pinView = "io.github.chaosleung:pinview:1.4.4"
+    const val  composeMaterial3PullRefresh = "eu.bambooapps:compose-material3-pullrefresh:1.1.1"
+
+
 
 }
