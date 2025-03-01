@@ -6,6 +6,7 @@ object Config {
     const val localModules = true
     const val baseFeaturesArchivesPath = "baseFeatures"
     const val baseLibesArchivesPath = "baseLibs"
+    const val isArchive = true
 
     val sourceCompatibility = JavaVersion.VERSION_17
     val targetCompatibility = JavaVersion.VERSION_17
@@ -134,8 +135,8 @@ object Config {
         const val baseStructure = ":BaseModules:BaseStructure"
 
         //Libs
-        const val baseCore = ":BaseModules:baseLibs:baseCore"
-        const val baseImageSelector = ":BaseModules:baseLibs:ImageSelector"
+        val baseCore = if(isArchive) ":baseLibs:baseCore" else ":BaseModules:baseLibs:baseCore"
+        const val baseImageSelector =":BaseModules:baseLibs:ImageSelector"
         const val baseLocation = ":BaseModules:baseLibs:location"
         const val baseGmsHms = ":BaseModules:baseLibs:gms_hms"
         const val baseShgardiMap = ":BaseModules:baseLibs:shgardiMap"
