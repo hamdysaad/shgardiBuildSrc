@@ -7,7 +7,7 @@ object Config {
     const val baseLibesArchivesPath = "baseLibs"
     const val isArchive = false
 
-    private val javaVersion = JavaVersion.VERSION_21
+    private val javaVersion = JavaVersion.VERSION_17
     val sourceCompatibility = javaVersion
     val targetCompatibility = javaVersion
     val jvmTarget = javaVersion.toString()
