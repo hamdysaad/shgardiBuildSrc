@@ -102,6 +102,7 @@ object Config {
         const val features_get_help = ":features:gethelp"
         const val features_grocery = ":features:grocery"
         const val features_thyban = ":features:thyban"
+        const val features_rahal = ":features:rahal"
         const val features_search = ":features:search"
         const val features_food = ":features:food"
         const val features_setting = ":features:setting"
