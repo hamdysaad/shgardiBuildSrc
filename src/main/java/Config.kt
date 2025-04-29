@@ -126,6 +126,7 @@ object Config {
 
         //Libs
         const val baseCore = ":BaseModules:baseLibs:baseCore"
+        const val baseCoreResources = ":BaseModules:baseCoreResources"
         const val baseImageSelector = ":BaseModules:baseLibs:ImageSelector"
         const val baseLocation = ":BaseModules:baseLibs:location"
         const val baseGmsHms = ":BaseModules:baseLibs:gms_hms"
