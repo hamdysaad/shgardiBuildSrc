@@ -1,20 +1,28 @@
+import org.gradle.api.JavaVersion
+
 object Config {
 
     const val localModules = true
+    const val baseFeaturesArchivesPath = "baseFeatures"
+    const val baseLibesArchivesPath = "baseLibs"
+    const val isArchive = false
+
+    private val javaVersion = JavaVersion.VERSION_17
+    val sourceCompatibility = javaVersion
+    val targetCompatibility = javaVersion
+    val jvmTarget = javaVersion.toString()
 
     object AppConfig {
-        const val compileSdkVersion = 34
+        const val compileSdkVersion = 35
         const val minSdkVersion = 23
         const val ndkVersion = "23.1.7779620"
-        const val versionCode = 292
-        const val versionName = "7.81"
         const val testRunner = "androidx.test.runner.AndroidJUnitRunner"
         const val consumerProguardFiles = "consumer-rules.pro"
         const val DeveloperFlavorDimension = "developer"
         const val DevDimension = "dev"
         const val StageDimension = "stage"
         const val ProdDimension = "prod"
-        const val kotlinCompilerExtensionVersion = "1.4.7"
+        const val kotlinCompilerExtensionVersion = "1.5.3"
 
     }
 
@@ -82,6 +90,7 @@ object Config {
 
     object Modules {
         const val core = ":core"
+        const val coreRes = ":coreres"
         const val drop_off = ":Dropoff"
         const val favourite_location = ":Lib:FavouriteLocation"
         const val lib_drop_off = ":Lib:Dropoff"
@@ -92,6 +101,8 @@ object Config {
         const val lib_track = ":Lib:Track"
         const val features_get_help = ":features:gethelp"
         const val features_grocery = ":features:grocery"
+        const val features_thyban = ":features:thyban"
+        const val features_rahal = ":features:rahal"
         const val features_search = ":features:search"
         const val features_food = ":features:food"
         const val features_setting = ":features:setting"
@@ -125,9 +136,8 @@ object Config {
         const val baseStructure = ":BaseModules:BaseStructure"
 
         //Libs
-        const val baseCore = ":BaseModules:baseLibs:baseCore"
-        const val baseCoreResources = ":BaseModules:baseCoreResources"
-        const val baseImageSelector = ":BaseModules:baseLibs:ImageSelector"
+        const val baseCore =  ":BaseModules:baseLibs:baseCore"
+        const val baseImageSelector =":BaseModules:baseLibs:ImageSelector"
         const val baseLocation = ":BaseModules:baseLibs:location"
         const val baseGmsHms = ":BaseModules:baseLibs:gms_hms"
         const val baseShgardiMap = ":BaseModules:baseLibs:shgardiMap"
@@ -141,6 +151,8 @@ object Config {
         const val baseNavigation = ":BaseModules:baseLibs:BaseNavigation"
         const val base_utils = ":BaseModules:baseLibs:Utils"
         const val shgardi_logger = ":BaseModules:baseLibs:ShgardiLogger"
+        const val baseCoreResource = ":BaseModules:baseCoreResource"
+        const val baseCoreUi = ":BaseModules:baseCoreUi"
 
         //Base features
         const val baseFeature_orderChatGroup = ":BaseModules:baseFeatures:OrderChatGroup"
@@ -175,8 +187,49 @@ object Config {
             const val hyperpaySdkLib = ":BaseModules:baseLibs:hyperpaySdkLib"
             const val hypersdkdeploy = ":BaseModules:baseLibs:hypersdkdeploy"
             const val hypersdkdebug = ":BaseModules:baseLibs:hypersdkdebug"
-
-
         }
+
+        /*Base libs*/
+        val hyperpaySdkLibModule = if(isArchive) ":baseLibs:hyperpaySdkLib" else FinanceModule.hyperpaySdkLib
+        val hypersdkdebugModule = if(isArchive) ":baseLibs:hypersdkdebug" else FinanceModule.hypersdkdebug
+        val hypersdkdeployModule = if(isArchive) ":baseLibs:hypersdkdeploy" else FinanceModule.hypersdkdeploy
+        val baseAuthModule = if(isArchive) ":baseLibs:auth" else baseAuth
+        val baseCoreModule = if(isArchive) ":baseLibs:baseCore" else baseCore
+        val baseCoreResourcesModule = if(isArchive) ":baseLibs:baseCoreResources" else baseCoreResource
+        val baseCoreUiModule = if(isArchive) ":baseLibs:baseCoreUi" else baseCoreUi
+        val baseStructureModule = if(isArchive) ":baseLibs:baseStructure" else baseStructure
+        val donationModule = if(isArchive) ":baseLibs:donation" else FinanceModule.donation_lib
+        val generalConfigModule = if(isArchive) ":baseLibs:generalConfig" else generalConfig
+        val gmsHmsModule = if(isArchive) ":baseLibs:gmsHms" else baseGmsHms
+        val imageSelectorModule = if(isArchive) ":baseLibs:imageSelector" else baseImageSelector
+        val locationModule = if(isArchive) ":baseLibs:location" else baseLocation
+        val intercomModule = if(isArchive) ":baseLibs:intercom" else baseIntercom
+        val navigationModule = if(isArchive) ":baseLibs:navigation" else baseNavigation
+        val networkModule = if(isArchive) ":baseLibs:network" else baseNetwork
+        val paymentModule = if(isArchive) ":baseLibs:payment" else payment
+        val polygonsModule = if(isArchive) ":baseLibs:polygons" else basePolygons
+        val serviceFeesModule = if(isArchive) ":baseLibs:serviceFees" else serviceFeesLib
+        val shgardiLoggerModule = if(isArchive) ":baseLibs:shgardiLogger" else shgardi_logger
+        val shgardiMapModule = if(isArchive) ":baseLibs:shgardiMap" else baseShgardiMap
+        val socketModule = if(isArchive) ":baseLibs:socket" else baseSocket
+        val walletModule = if(isArchive) ":baseLibs:wallet" else FinanceModule.walletLibrary
+        val utilsModule = if(isArchive) ":baseLibs:utils" else base_utils
+
+
+        /*Base Features*/
+        val AuthenticationBaseFeatureModule = if(isArchive) ":baseFeatures:authentication" else baseFeature_authentication
+        val chargeWalletBaseFeatureModule = if(isArchive) ":baseFeatures:chargeWallet" else FinanceModule.chargeWallet
+        val chargeWalletWithCodeBaseFeatureModule = if(isArchive) ":baseFeatures:chargeWalletWithCode" else FinanceModule.charge_wallet_with_code
+        val complaintBaseFeatureModule = if(isArchive) ":baseFeatures:complaint" else baseFeature_complaint
+        val donationBaseFeatureModule = if(isArchive) ":baseFeatures:donation" else baseFeature_donation
+        val moneyTransferFeatureModule = if(isArchive) ":baseFeatures:moneyTransfer" else FinanceModule.money_transfer
+        val notificationsFeatureModule = if(isArchive) ":baseFeatures:notifications" else baseFeature_notifications
+        val orderChatGroupFeatureModule = if(isArchive) ":baseFeatures:orderChatGroup" else baseFeature_orderChatGroup
+        val photoViewerFeatureModule = if(isArchive) ":baseFeatures:photoViewer" else baseFeature_photoViewer
+        val ratingFeatureModule = if(isArchive) ":baseFeatures:rating" else baseFeature_rating
+        val recipientInfoFeatureModule = if(isArchive) ":baseFeatures:recipient_info" else baseFeature_recipient_info
+        val savedCardsFeatureModule = if(isArchive) ":baseFeatures:SavedCards" else FinanceModule.save_cards
+        val walletTransactionsFeatureModule = if(isArchive) ":baseFeatures:walletTransactions" else FinanceModule.wallet_transactions
+
     }
 }
