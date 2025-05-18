@@ -328,4 +328,7 @@ object Libraries {
         "com.github.florent37:singledateandtimepicker:${Versions.single_date_and_timepicker}"
     const val google_guava_jre = "com.google.guava:guava:${Versions.google_guava_jre}"
     const val material_spinner = "com.jaredrummler:material-spinner:${Versions.material_spinner}"
+    const val NearPayStoreSdk =
+        "io.nearpay:nearpay-sdk-store:${Versions.NearPaySdk}"
+
 }
