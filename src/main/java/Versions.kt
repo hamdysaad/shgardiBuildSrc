@@ -201,4 +201,16 @@ object Versions {
     const val checker = "3.18.0"
     const val datatransport = "2.2.0"
     const val places = "2.7.0"
+
+
+    //partner extras
+    const val dot_net_core_signalr_client_java = "1.14"
+    const val readystatesoftware = "1.1.0"
+    const val smart_tab_layout = "2.0.0@aar"
+    const val arch_core = "2.1.0"
+    const val printerlibrary = "1.0.18"
+    const val mockwebserver = "4.9.3"
+    const val single_date_and_timepicker = "2.2.7"
+    const val google_guava_jre = "24.1-jre"
+    const val material_spinner = "1.3.1"
 }
