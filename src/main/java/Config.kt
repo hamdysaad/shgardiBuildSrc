@@ -47,6 +47,8 @@ object Config {
             "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:${Versions.google_secrets}"
         const val checkout3Ds = "https://maven.pkg.github.com/checkout/checkout-3ds-sdk-android"
 
+        //partner missing dependencies
+        const val google_maven = "https://maven.google.com/"
     }
 
     object Plugins {
@@ -123,6 +125,26 @@ object Config {
         const val checkoutLib = ":Lib:CheckoutLib"
         const val qrOrderFeature = ":features:qr_order"
         const val feature_invocie = ":features:invoice"
+
+        //partner missing dependencies
+        const val partner_status_lib = ":PartnerStatus"
+        const val settings = ":settings"
+        const val sideMenu = ":sidemenu"
+        const val navigation_lib_partner = ":libs:Navigation"
+        const val design_system_lib = ":libs:DesignSystem"
+
+
+        const val auth_lib = ":libs:storeAuthLib"
+        const val selection_dialog_lib = ":libs:selectiondialog"
+
+        //Features
+        const val auth_feature = ":features:Authentication"
+        const val ordering = ":features:ordering"
+        const val working_hours = ":features:workinghours"
+        const val product_feature = ":features:products"
+        const val wallet_feature = ":features:wallet"
+        const val home = ":home"
+        const val dispatchOrder = ":features:dispatch_order"
     }
 
     object NameSpaces {
@@ -173,6 +195,11 @@ object Config {
         const val feature_talqa = ":features:Talqa"
         const val utils_lib = ":BaseModules:baseLibs:Utils"
 
+
+        //partner extras
+        const val dateTimePicker = ":BaseModules:baseLibs:DateTimePicker"
+        const val serviceFess = ":BaseModules:baseLibs:ServiceFees"
+
         object FinanceModule {
             const val wallet = ":features:wallet"
             const val loyalty = ":features:loyalty"
@@ -187,6 +214,10 @@ object Config {
             const val hyperpaySdkLib = ":BaseModules:baseLibs:hyperpaySdkLib"
             const val hypersdkdeploy = ":BaseModules:baseLibs:hypersdkdeploy"
             const val hypersdkdebug = ":BaseModules:baseLibs:hypersdkdebug"
+
+            // partner missing Modules
+            const val base_payment = ":BaseModules:baseLibs:payment"
+            const val base_nearpay_payment = ":BaseModules:baseLibs:near_pay"
         }
 
         /*Base libs*/

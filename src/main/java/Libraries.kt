@@ -312,4 +312,23 @@ object Libraries {
 
 
 
+    //partner extras
+    const val dot_net_core_signalr_client_java =
+        "com.smartarmenia:dotnetcoresignalrclientjava:${Versions.dot_net_core_signalr_client_java}"
+    const val readystatesoftware =
+        "com.readystatesoftware.chuck:library:${Versions.readystatesoftware}"
+    const val smart_tab_layout =
+        "com.ogaclejapan.smarttablayout:library:${Versions.smart_tab_layout}"
+    const val smart_tab_layout_uitls =
+        "com.ogaclejapan.smarttablayout:utils-v4:${Versions.smart_tab_layout}"
+    const val arch_core = "androidx.arch.core:core-testing:${Versions.arch_core}"
+    const val printerlibrary = "com.sunmi:printerlibrary:${Versions.printerlibrary}"
+    const val mockwebserver = "com.squareup.okhttp3:mockwebserver:${Versions.mockwebserver}"
+    const val single_date_and_timepicker =
+        "com.github.florent37:singledateandtimepicker:${Versions.single_date_and_timepicker}"
+    const val google_guava_jre = "com.google.guava:guava:${Versions.google_guava_jre}"
+    const val material_spinner = "com.jaredrummler:material-spinner:${Versions.material_spinner}"
+    const val NearPayStoreSdk =
+        "io.nearpay:nearpay-sdk-store:${Versions.NearPaySdk}"
+
 }
