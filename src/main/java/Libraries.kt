@@ -196,7 +196,7 @@ object Libraries {
     const val constraintlayout =
         "androidx.constraintlayout:constraintlayout:${Versions.constraintlayout}"
     const val okhttpBom = "com.squareup.okhttp3:okhttp-bom:${Versions.okhttpBom}"
-    const val okhttp = "com.squareup.okhttp3:okhttp"
+    const val okhttp = "com.squareup.okhttp3:okhttp:3.14.9"
     const val okhttpUrlConnection = "com.squareup.okhttp3:okhttp-urlconnection"
     const val logging_interceptor = "com.squareup.okhttp3:logging-interceptor"
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
